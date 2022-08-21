@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Lyrics to OBS</title>
+		<!-- CSS only -->
+		<link href="./external/bootstrap.min.css" rel="stylesheet" >
+		<script src="./external/bootstrap.bundle.min.js" ></script>
+		<script src="./external/jquery.min.js"></script>
+		<script src="./js/titles.js"></script>
+		<script src="./js/websocket.js?e"></script>
+		
+	</head>
+	<body>
+		<style>
+			.title {
+				color: black; 
+				text-decoration: none;
+				background-color:blue;
+			}
+		</style>
+		<div class="wrapper p-1">
+			<div class="container shadow rounded pt-2">
+				<div class="row rounded shadow p-2 mt-3">
+					
+					<div class="row">
+						<div class="col-12">
+							<textarea id="titles" class="search" rows="10" style="width: 100%; max-width: 100%;"></textarea>
+						</div>
+					</div>
+				
+				<div class="result p-2 mt-2 ">
+					<div id="result_area">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
+
