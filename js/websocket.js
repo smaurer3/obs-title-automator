@@ -33,13 +33,13 @@ let obs_handler = function(data) {
 
 $(document).ready(function(){
 	
-		connect('ws://localhost:6780/', title_handler);
-		connect('ws://localhost:4444/', obs_handler);
+		title = connect('ws://localhost:6780/', title_handler);
+		obs = connect('ws://localhost:4444/', obs_handler);
 		
 	});
 
 function connect(uri, handler) {
-	title = new MyWebsocket(uri, handler);
+	return new MyWebsocket(uri, handler);
 }
 
 function update(lyrics) {
